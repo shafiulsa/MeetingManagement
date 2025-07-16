@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Meeting Minutes";
+}
+
+<div class="meeting-minutes-container">
+    <div class="header-section">
+        <h2 class="meeting-title"><i class="fas fa-clipboard-list"></i> MEETING MINUTES</h2>
+        <button id="refreshBtn" class="btn btn-refresh">
+            <i class="fas fa-sync-alt"></i> Refresh
+        </button>
+    </div>
+    
+    <div class="table-responsive">
+        <table class="table meeting-table">
+            <thead>
+                <tr class="table-header">
+                    <th class="text-left">ID</th>
+                    <th class="text-left">CUSTOMER TYPE</th>
+                    <th class="text-left">CUSTOMER NAME</th>
+                    <th class="text-left">MEETING DATE/TIME</th>
+                    <th class="text-left">MEETING PLACE</th>
+                    <th class="text-left">CLIENT ATTENDEES</th>
+                    <th class="text-left">HOST ATTENDEES</th>
+                    <th class="text-left">AGENDA</th>
+                    <th class="text-left">DISCUSSION</th>
+                    <th class="text-left">DECISION</th>
+                </tr>
+            </thead>
+            <tbody id="meetingMinutesTableBody">
+                <!-- Data will be loaded here from database -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/meetingMinutes.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+}
+
+@section Scripts {
+    <script src="~/js/meetingMinutes.js"></script>
+}

@@ -1,0 +1,120 @@
+.meeting-minutes-container {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.meeting-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 0;
+}
+
+.btn-refresh {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.btn-refresh:hover {
+    background-color: #2980b9;
+}
+
+.meeting-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.table-header {
+    background-color: #34495e !important;
+    color: white;
+}
+
+.table-header th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.table-row {
+    border-bottom: 1px solid #ecf0f1;
+    transition: background-color 0.2s;
+}
+
+.table-row:hover {
+    background-color: #f8f9fa;
+}
+
+.table-row td {
+    padding: 12px 15px;
+    vertical-align: top;
+}
+
+.id-cell {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.type-cell {
+    text-transform: capitalize;
+}
+
+.attendee {
+    padding: 4px 0;
+    border-bottom: 1px dashed #ecf0f1;
+}
+
+.attendee:last-child {
+    border-bottom: none;
+}
+
+.discussion-points, .decision-points {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.discussion-points li, .decision-points li {
+    margin-bottom: 5px;
+}
+
+.discussion-points li:last-child, 
+.decision-points li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .meeting-minutes-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .meeting-table {
+        font-size: 0.85rem;
+    }
+    
+    .table-header th {
+        padding: 8px 10px;
+    }
+    
+    .table-row td {
+        padding: 8px 10px;
+    }
+}
