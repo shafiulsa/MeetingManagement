@@ -1,11 +1,11 @@
 
-# 📋 Meeting Management System
+#  Meeting Management System
 
 An ASP.NET Core MVC-based Meeting Minutes Management System that allows users to manage and record meeting details, attendees, agendas, discussions, and decisions efficiently.
 
 ---
 
-## 📌 Features
+##  Features
 
 ### 🧾 Meeting Entry Form
 - **Customer Selection**:
@@ -19,21 +19,21 @@ An ASP.NET Core MVC-based Meeting Minutes Management System that allows users to
   - Place, client-side attendees, host-side attendees
   - Agenda, discussion, and decision fields
 
-### 📦 Product/Service Section
+###  Product/Service Section
 - Product/Service dropdown loaded from `Products_Service_Tbl`
 - Unit auto-filled in readonly textbox based on selected item
 - Quantity input field (only numeric values allowed)
 - Add multiple rows dynamically to a table (with edit/delete)
 - Uses Bootstrap for dynamic interaction
 
-### 💾 Save Functionality
+###  Save Functionality
 - First part saved into:
   - `Meeting_Minutes_Master_Tbl` via `Meeting_Minutes_Master_Save_SP`
 - Second part saved into:
   - `Meeting_Minutes_Details_Tbl` via `Meeting_Minutes_Details_Save_SP`
 - Saved using **stored procedures only**, not Entity Framework LINQ
 
-### 📃 View Meeting Records
+### View Meeting Records
 - Displays saved meeting minutes in a Bootstrap table
 - Joined view of both master and detail tables
 - Shows:
@@ -42,22 +42,22 @@ An ASP.NET Core MVC-based Meeting Minutes Management System that allows users to
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
-### 💻 Backend
+###  Backend
 - **ASP.NET Core MVC (v8)**
 - **C#**
 - **Entity Framework Core (used only for executing SPs)**
 - **MS SQL Server** with stored procedures
 
-### 🎨 Frontend
+###  Frontend
 - **HTML5, Bootstrap 5**
 - **jQuery**
 - **Font Awesome**
 
 ---
 
-## 📂 Project Structure (Important Parts)
+## Project Structure (Important Parts)
 
 ```
 
@@ -90,30 +90,30 @@ MeetingManagement/
 
 ---
 
-## 🧱 Entity Framework Commands
+##  Entity Framework Commands
 
 Make sure you have installed EF tools:
 ```bash
 dotnet tool install --global dotnet-ef
 ````
 
-### 🛠 Add Migration
+###  Add Migration
 
 ```bash
 dotnet ef migrations add InitialCreate
 ```
 
-### 🧾 Update Database
+###  Update Database
 
 ```bash
 dotnet ef database update
 ```
 
-> 🐧 **Ubuntu Note**: Ensure you're in the folder where the `.csproj` file exists, and SQL Server is running.
+>  **Ubuntu Note**: Ensure you're in the folder where the `.csproj` file exists, and SQL Server is running.
 
 ---
 
-## 📄 Stored Procedures
+##  Stored Procedures
 
 ### 1. `Meeting_Minutes_Master_Save_SP`
 
@@ -177,7 +177,7 @@ GO
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 1. **Clone the repo**:
 
@@ -208,20 +208,20 @@ GO
 
 ---
 
-## 📸 UI Preview
+##  UI Preview
 
-### 🧾 Meeting Entry Form
+###  Meeting Entry Form
 
 <img width="1868" height="933" alt="image" src="https://github.com/user-attachments/assets/9864e32e-393b-4ab0-a250-274b18ec7441" />
 
 
-### 📋 Saved Records View
+###  Saved Records View
 
 <img width="1848" height="922" alt="image" src="https://github.com/user-attachments/assets/394f24a8-edc4-42cc-b39d-051024bc8363" />
 
 ---
 
-## 📚 Author
+##  Author
 
 **Shafiul Islam** <br>
 🎓 Department of ICT, MBSTU <br>
